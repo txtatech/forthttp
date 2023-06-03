@@ -5,7 +5,18 @@ VIDEO QUICKSTART GUIDE:
 
 https://drive.google.com/file/d/1xkBDqDxi48SamU2HKtBDSNsmShEg347N/view?usp=sharing
 
-QUICKSTART GUIDE:
+(OR)
+
+Short Link:
+https://youtu.be/tiKRZchBCKQ
+
+(OR)
+
+Long Link:
+
+https://www.youtube.com/watch?v=tiKRZchBCKQ
+
+TEXT QUICKSTART GUIDE:
 
 https://github.com/txtatech/forthttp/blob/main/README_Quickstart_Guide.txt
 
