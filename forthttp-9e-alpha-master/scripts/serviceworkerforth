@@ -1,0 +1,7 @@
+: install ( -- ) ." Installing Service Worker..." ;
+: activate ( -- ) ." Activating Service Worker..." ;
+: fetch ( -- ) ." Fetching resources with Service Worker..." ;
+
+: service-worker ( -- ) install activate fetch ;
+
+: null-service-worker ( -- ) drop ;
