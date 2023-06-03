@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QR Cacher!</title>
+  <a href="images.html">Cache Qr Codes</a>
+  <a href="index.html">To Main</a>
+  <a href="./images">Qr Code Archive</a>
+  <script type="text/javascript" src="qrcode.js"></script>
+  <script src="jsQR.js"></script>
+</head>
+<body>
+    <div id="placeHolder"></div>
+    <div>
+        <img class="photo" src="net234a.gif" alt="net234a" style="width: 5%; height: 5%;" />
+        </div>
+  <h1>QR Cacher Console Output:</h1>
+	<div id="output"></div>
+	    <script>
+      // Log some messages to the console
+      console.log('Hello, console!');
+      console.dir({ name: 'AI', age: 101 });
+
+
+      // Show the console log output on the page
+      var output = document.getElementById('output');
+      output.innerHTML = '<pre>' + console.log + '</pre>';
+    </script>    
+
+  <script>
+    // Log some messages to the console
+    console.log('Hello, console!');
+    console.dir({ key: 'value' });
+
+
+    // Display the console output on the page
+    var output = document.getElementById('output');
+    var log = console.log;
+    console.log = function(message) {
+      log.apply(console, arguments);
+      output.innerHTML += '<pre>' + message + '</pre>';
+    }
+
+    var warn = console.warn;
+    console.warn = function(message) {
+      warn.apply(console, arguments);
+      output.innerHTML += '<pre style="color: orange;">' + message + '</pre>';
+    }
+
+    var error = console.error;
+    console.error = function(message) {
+      error.apply(console, arguments);
+      output.innerHTML += '<pre style="color: red;">' + message + '</pre>';
+    }
+    
+  </script>
+<script>
+  // Get all of the image elements on the page
+  var imageElements = document.querySelectorAll('img');
+
+  // Iterate through the image elements
+  for (var i = 0; i < imageElements.length; i++) {
+    var imageElement = imageElements[i];
+    var imageUrl = imageElement.src;
+
+    // Create a new link element for the image
+    var linkElement = document.createElement('link');
+    linkElement.rel = 'preload';
+    linkElement.href = imageUrl;
+    linkElement.as = 'image';
+
+    // Append the link element to the head of the document
+    document.head.appendChild(linkElement);
+  }
+  
+</script>
+<script>
+    var typeNumber = 4;
+    var errorCorrectionLevel = 'L';
+    var qr = qrcode(typeNumber, errorCorrectionLevel);
+    qr.addData('Hi!');
+    qr.make();
+    document.getElementById('placeHolder').innerHTML = qr.createImgTag();
+</script>
+<div id="qr-code-data">
+<img src='./images/nodebase64-3-qr-code-8.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-6-qr-code-12.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-9-qr-code-2.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-2-qr-code-10.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-7-qr-code-4.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-10-qr-code-17.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-4-qr-code-9.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-4-qr-code-13.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-6-qr-code-5.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-4-qr-code-10.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-3-qr-code-20.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-7-qr-code-19.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-5-qr-code-20.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-3-qr-code-13.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-4-qr-code-4.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-6-qr-code-3.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-qr-code-24.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-10-qr-code-6.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-6-qr-code-15.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-4-qr-code-23.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-qr-code-18.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-10-qr-code-26.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-9-qr-code-19.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-8-qr-code-4.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-7-qr-code-14.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-2-qr-code-21.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-6-qr-code-19.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-7-qr-code-11.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-8-qr-code-11.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-qr-code-7.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-5-qr-code-6.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-5-qr-code-4.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-qr-code-12.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-5-qr-code-5.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-7-qr-code-5.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-7-qr-code-3.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-2-qr-code-3.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-6-qr-code-16.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-2-qr-code-7.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-9-qr-code-13.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-7-qr-code-18.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-3-qr-code-25.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-3-qr-code-2.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-7-qr-code-1.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-3-qr-code-4.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-6-qr-code-17.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-9-qr-code-4.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-3-qr-code-15.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-qr-code-9.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-2-qr-code-19.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-10-qr-code-19.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-10-qr-code-20.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-9-qr-code-9.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-10-qr-code-3.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-4-qr-code-11.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-10-qr-code-4.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-2-qr-code-5.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-8-qr-code-7.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-8-qr-code-18.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-qr-code-1.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-9-qr-code-6.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-10-qr-code-10.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-8-qr-code-20.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-4-qr-code-22.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-5-qr-code-2.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-7-qr-code-6.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-2-qr-code-9.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-10-qr-code-24.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-10-qr-code-7.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-10-qr-code-5.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-3-qr-code-12.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-5-qr-code-9.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-7-qr-code-13.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-qr-code-11.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-10-qr-code-14.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-8-qr-code-5.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-qr-code-5.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-10-qr-code-9.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-4-qr-code-18.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-qr-code-13.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-7-qr-code-16.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-7-qr-code-2.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-6-qr-code-11.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-9-qr-code-17.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-3-qr-code-22.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-8-qr-code-12.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-3-qr-code-9.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-qr-code-8.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-2-qr-code-2.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-9-qr-code-7.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-10-qr-code-18.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-9-qr-code-1.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-2-qr-code-8.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-4-qr-code-7.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-10-qr-code-13.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-7-qr-code-8.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-9-qr-code-12.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-qr-code-17.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-5-qr-code-19.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-3-qr-code-16.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-9-qr-code-15.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-7-qr-code-21.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-4-qr-code-20.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-6-qr-code-18.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-3-qr-code-18.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-4-qr-code-2.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-5-qr-code-15.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-10-qr-code-15.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-5-qr-code-13.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-2-qr-code-18.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-9-qr-code-20.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-3-qr-code-26.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-5-qr-code-8.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-2-qr-code-1.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-9-qr-code-11.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-10-qr-code-2.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-3-qr-code-19.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-4-qr-code-19.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-3-qr-code-21.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-5-qr-code-11.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-qr-code-22.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-7-qr-code-17.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-2-qr-code-16.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-8-qr-code-19.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-6-qr-code-20.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-6-qr-code-14.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-9-qr-code-5.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-10-qr-code-16.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-3-qr-code-5.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-qr-code-21.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-qr-code-6.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-2-qr-code-17.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-8-qr-code-16.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-3-qr-code-10.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-6-qr-code-1.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-2-qr-code-12.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-2-qr-code-14.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-10-qr-code-21.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-2-qr-code-23.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-7-qr-code-7.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-8-qr-code-9.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-4-qr-code-12.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-3-qr-code-23.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-10-qr-code-12.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-6-qr-code-7.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-5-qr-code-1.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-2-qr-code-11.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-10-qr-code-1.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-2-qr-code-15.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-qr-code-14.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-9-qr-code-14.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-4-qr-code-16.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-10-qr-code-25.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-qr-code-15.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-2-qr-code-13.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-2-qr-code-20.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-3-qr-code-6.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-4-qr-code-8.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-qr-code-3.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-qr-code-4.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-4-qr-code-6.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-10-qr-code-22.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-6-qr-code-9.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-4-qr-code-3.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-5-qr-code-14.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-6-qr-code-21.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-7-qr-code-12.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-2-qr-code-4.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-9-qr-code-10.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-5-qr-code-17.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-5-qr-code-16.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-qr-code-23.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-6-qr-code-2.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-2-qr-code-24.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-7-qr-code-20.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-9-qr-code-3.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-qr-code-2.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-3-qr-code-17.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-5-qr-code-18.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-7-qr-code-22.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-qr-code-10.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-6-qr-code-6.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-4-qr-code-1.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-7-qr-code-10.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-4-qr-code-17.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-9-qr-code-8.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-5-qr-code-3.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-3-qr-code-24.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-6-qr-code-8.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-3-qr-code-3.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-qr-code-19.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-3-qr-code-11.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-5-qr-code-12.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-5-qr-code-7.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-8-qr-code-14.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-8-qr-code-10.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-7-qr-code-9.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-qr-code-16.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-3-qr-code-14.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-9-qr-code-21.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-4-qr-code-5.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-qr-code-20.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-2-qr-code-22.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-6-qr-code-4.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-8-qr-code-17.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-8-qr-code-3.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-4-qr-code-14.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-8-qr-code-15.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-9-qr-code-18.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-9-qr-code-22.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-3-qr-code-7.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-6-qr-code-10.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-4-qr-code-21.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-3-qr-code-1.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-9-qr-code-16.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-7-qr-code-15.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-10-qr-code-23.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-8-qr-code-6.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-5-qr-code-10.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-8-qr-code-8.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-4-qr-code-15.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-2-qr-code-6.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-8-qr-code-2.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-10-qr-code-8.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-6-qr-code-13.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-10-qr-code-11.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-8-qr-code-13.png' class='qr-code-image'></img>
+<img src='./images/nodebase64-8-qr-code-1.png' class='qr-code-image'></img>
+<img src='./images/commands-1.png' class='qr-code-image'></img>
+<img src='./images/commands-2.png' class='qr-code-image'></img>
+<img src='./images/commands-3.png' class='qr-code-image'></img>
+<img src='./images/commands-4.png' class='qr-code-image'></img>
+<img src='./images/commands-5.png' class='qr-code-image'></img>
+<img src='./images/commands-6.png' class='qr-code-image'></img>
+<img src='./images/commands-7.png' class='qr-code-image'></img>
+<img src='./images/commands-8.png' class='qr-code-image'></img>
+<img src='./images/commands-9.png' class='qr-code-image'></img>
+<img src='./images/commands-10.png' class='qr-code-image'></img>
+<img src='./images/commands-11.png' class='qr-code-image'></img>
+<img src='./images/commands-12.png' class='qr-code-image'></img>
+<img src='./images/commands-13.png' class='qr-code-image'></img>
+<img src='./images/commands-14.png' class='qr-code-image'></img>
+<img src='./images/commands-15.png' class='qr-code-image'></img>
+<img src='./images/commands-16.png' class='qr-code-image'></img>
+<img src='./images/commands-17.png' class='qr-code-image'></img>
+<img src='./images/commands-18.png' class='qr-code-image'></img>
+<img src='./images/commands-19.png' class='qr-code-image'></img>
+<img src='./images/commands-20.png' class='qr-code-image'></img>
+<img src='./images/commands-21.png' class='qr-code-image'></img>
+<img src='./images/commands-22.png' class='qr-code-image'></img>
+<img src='./images/commands-23.png' class='qr-code-image'></img>
+<img src='./images/commands-24.png' class='qr-code-image'></img>
+<img src='./images/commands-25.png' class='qr-code-image'></img>
+<img src='./images/commands-26.png' class='qr-code-image'></img>
+<img src='./images/commands-27.png' class='qr-code-image'></img>
+<img src='./images/commands-28.png' class='qr-code-image'></img>
+<img src='./images/commands-29.png' class='qr-code-image'></img>
+<img src='./images/commands-30.png' class='qr-code-image'></img>
+<img src='./images/commands-31.png' class='qr-code-image'></img>
+<img src='./images/commands-32.png' class='qr-code-image'></img>
+<img src='./images/commands-33.png' class='qr-code-image'></img>
+<img src='./images/commands-34.png' class='qr-code-image'></img>
+<img src='./images/commands-35.png' class='qr-code-image'></img>
+<img src='./images/commands-36.png' class='qr-code-image'></img>
+<img src='./images/commands-37.png' class='qr-code-image'></img>
+<img src='./images/commands-38.png' class='qr-code-image'></img>
+<img src='./images/commands-39.png' class='qr-code-image'></img>
+<img src='./images/commands-40.png' class='qr-code-image'></img>
+<img src='./images/commands-41.png' class='qr-code-image'></img>
+<img src='./images/commands-42.png' class='qr-code-image'></img>
+<img src='./images/commands-43.png' class='qr-code-image'></img>
+<img src='./images/commands-44.png' class='qr-code-image'></img>
+<img src='./images/commands-45.png' class='qr-code-image'></img>
+<img src='./images/commands-46.png' class='qr-code-image'></img>
+<img src='./images/commands-47.png' class='qr-code-image'></img>
+<img src='./images/commands-48.png' class='qr-code-image'></img>
+<img src='./images/commands-49.png' class='qr-code-image'></img>
+<img src='./images/commands-50.png' class='qr-code-image'></img>
+<img src='./images/commands-51.png' class='qr-code-image'></img>
+<img src='./images/commands-52.png' class='qr-code-image'></img>
+<img src='./images/commands-53.png' class='qr-code-image'></img>
+<img src='./images/commands-54.png' class='qr-code-image'></img>
+<img src='./images/commands-55.png' class='qr-code-image'></img>
+<img src='./images/commands-56.png' class='qr-code-image'></img>
+<img src='./images/commands-57.png' class='qr-code-image'></img>
+<img src='./images/commands-58.png' class='qr-code-image'></img>
+<img src='./images/commands-59.png' class='qr-code-image'></img>
+<img src='./images/commands-60.png' class='qr-code-image'></img>
+<img src='./images/commands-61.png' class='qr-code-image'></img>
+<img src='./images/commands-62.png' class='qr-code-image'></img>
+<img src='./images/commands-63.png' class='qr-code-image'></img>
+<img src='./images/commands-64.png' class='qr-code-image'></img>
+<img src='./images/commands-65.png' class='qr-code-image'></img>
+<img src='./images/commands-66.png' class='qr-code-image'></img>
+<img src='./images/commands-67.png' class='qr-code-image'></img>
+<img src='./images/commands-68.png' class='qr-code-image'></img>
+<img src='./images/commands-69.png' class='qr-code-image'></img>
+<img src='./images/commands-70.png' class='qr-code-image'></img>
+<img src='./images/commands-71.png' class='qr-code-image'></img>
+<img src='./images/commands-72.png' class='qr-code-image'></img>
+<img src='./images/commands-73.png' class='qr-code-image'></img></div>
+<script>
+window.onload = function() {
+  // Get all of the QR code images
+  var qrCodeImages = document.querySelectorAll('.qr-code-image');
+  var delay = 100; // Delay in milliseconds
+
+  // Iterate through the QR code images
+  for (var i = 0; i < qrCodeImages.length; i++) {
+    (function(image) {
+      setTimeout(function() {
+        var canvas = document.createElement('canvas');
+        var context = canvas.getContext('2d');
+
+        // Set the dimensions of the canvas to match the dimensions of the image
+        canvas.width = image.width;
+        canvas.height = image.height;
+
+        // Draw the image onto the canvas
+        context.drawImage(image, 0, 0);
+
+        // Get the image data from the canvas
+        var imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+
+        // Decode the QR code using jsqr
+        var qrCode = jsQR(imageData.data, imageData.width, imageData.height);
+
+        if (qrCode) {
+          // Do something with the decoded QR code data
+          console.log(qrCode.data);
+
+          if (qrCode) {
+            // Store the data in the DOM
+            var element = document.createElement('div');
+            element.innerHTML = qrCode.data;
+
+            // Store the data in a blob
+            var blob = new Blob([qrCode.data], { type: 'text/plain' });
+
+            // Store the data in memory
+            var data = qrCode.data;
+
+            // Store the data as a binary string
+            var binaryString = atob(qrCode.data);
+          }
+        }
+      }, delay * i);
+    })(qrCodeImages[i]);
+  }
+};
+
+</script>
+
+</body>
+</html>
+
+
+
