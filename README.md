@@ -30,20 +30,27 @@ https://docs.google.com/document/d/1R7CBKz1g7bGoJvtMxYe0tsz6RxzlKeDVIqFFU17ztLE/
 https://docs.google.com/document/d/1RFs70Qx1wmyuDe7HtkR18cOVL9SwWhtJ_HFDrESAVD4/edit?usp=sharing
 
 The 'forthttp' Forth Web Interpreter is a powerful and versatile software application that combines Rust-based web server functionality with Forth language integration. It allows users to interact with a web interface to input and execute Forth commands, providing a seamless and efficient way to work with Forth programming.
-
-System Architecture:
+**
+System Architecture:**
 
 The Forth Web Interpreter consists of the following key components:
 
-Browser: Users interact with the application through a web browser, where they can input Forth commands and receive the results of their execution.
+**Browser:**
 
-Rust Web Server: The Rust-based web server handles incoming requests from the browser, routes them to the appropriate endpoints, and communicates with the Forth runtime for command execution.
+Users interact with the application through a web browser, where they can input Forth commands and receive the results of their execution.
 
-Forth Runtime: The Forth runtime serves as the core engine that executes the Forth commands. It interprets and processes the commands, performs the necessary operations, and returns the results to the web server for further handling.
+**Rust Web Server:**
+
+The Rust-based web server handles incoming requests from the browser, routes them to the appropriate endpoints, and communicates with the Forth runtime for command execution.
+
+**Forth Runtime:**
+
+The Forth runtime serves as the core engine that executes the Forth commands. It interprets and processes the commands, performs the necessary operations, and returns the results to the web server for further handling.
 
 The architecture ensures a smooth flow of communication between the browser, web server, and Forth runtime, enabling users to execute Forth commands and receive immediate feedback through the web interface.
 
-Functionality and Usage
+**Functionality and Usage**
+
 The Forth Web Interpreter offers a range of features and capabilities for executing Forth commands. Users can access the web application through their browser and interact with the intuitive web interface. Here's a step-by-step guide on how to use the application:
 
 Access the Web Interface: Open your preferred web browser and navigate to the URL where the Forth Web Interpreter is hosted. For example, you may access it at http://localhost:8080 or http://127.0.0.1:8080
@@ -56,7 +63,8 @@ View Results: The application will display the results of the executed Forth com
 
 In addition to the web interface, the Forth Web Interpreter also provides an HTTP API, allowing developers to programmatically interact with the application. By sending HTTP POST requests to the appropriate endpoint (/forth), developers can execute Forth commands and retrieve the results programmatically.
 
-Installation and Setup
+Installation and Setup:
+
 To set up the Forth Web Interpreter, follow these steps:
 
 Clone the Repository: Begin by cloning the repository containing the Forth Web Interpreter codebase to your local machine using the following command:
@@ -83,10 +91,13 @@ This will start the web server, which will listen on localhost:8080 by default.
 
 Now you have the Forth Web Interpreter up and running, ready to accept Forth commands through the web interface or the HTTP API.
 
-QR Code Integration
+**QR Code Integration:
+**
+
 One of the notable features of the Forth Web Interpreter is its QR Code integration. The application allows you to generate QR Codes that, when scanned, direct users to a specific set of pre-loaded Forth commands. This functionality enables dynamic loading and execution of JavaScript, providing a unique and interactive user experience.
 
-To utilize the QR Code integration:
+**To utilize the QR Code integration:
+**
 
 Generate a QR Code: Use the provided functionality within the web interface to generate a QR Code. The QR Code will encode a URL that directs the user to the web interface, with the desired Forth commands included as a query parameter.
 
@@ -96,10 +107,13 @@ Execute the Pre-loaded Commands: Users can view the pre-loaded Forth commands on
 
 The QR Code integration enhances the versatility and flexibility of the Forth Web Interpreter, allowing users to seamlessly load and execute Forth commands on-the-go.
 
-Security Considerations
+**Security Considerations:**
+
 When working with a web-based application like the Forth Web Interpreter, it's crucial to prioritize security. Here are a few security considerations to keep in mind:
 
-User Input Sanitization: Ensure that all user input is properly sanitized before processing it on the server side. Apply appropriate input validation and filtering techniques to prevent code injection or other forms of malicious behavior.
+**User Input Sanitization:**
+
+Ensure that all user input is properly sanitized before processing it on the server side. Apply appropriate input validation and filtering techniques to prevent code injection or other forms of malicious behavior.
 
 Secure Communication: Protect the communication between the browser and the server by using secure protocols such as HTTPS. This helps to ensure data integrity and confidentiality during transmission.
 
@@ -109,7 +123,8 @@ Code Review and Auditing: Regularly review the codebase for potential security v
 
 By adopting a proactive approach to security and following best practices, you can mitigate potential risks and ensure a secure and reliable environment for the Forth Web Interpreter.
 
-Extensibility and Customization
+**Extensibility and Customization:**
+
 The Forth Web Interpreter is built with flexibility and extensibility in mind, allowing you to tailor it to your specific needs. The Rust-based server provides a solid foundation for further development and customization. Here are some possibilities for extending and modifying the application:
 
 Additional Functionality: You can expand the capabilities of the Forth runtime by incorporating new Forth words or implementing additional operations specific to your use case.
@@ -122,7 +137,8 @@ Optimizations and Performance Enhancements: Analyze the performance of the appli
 
 The extensibility and customization options enable you to adapt the Forth Web Interpreter to suit your unique requirements and explore new possibilities in Forth programming.
 
-Unconventional Uses and the Reverse Rust Kernel with Forth OS
+## **Unconventional Uses and the Reverse Rust Kernel with Forth OS:**
+
 The Forth Web Interpreter can serve as a foundation for exploring unconventional use cases and innovative solutions. Here are a few examples:
 
 A Learning Tool: The integration of JavaScript, Rust, and Forth provides an excellent platform for studying low-level systems programming, operating system development, and programming language design. By analyzing the codebase and understanding the interactions between these components, developers and students can gain valuable insights into these areas of study.
@@ -139,13 +155,16 @@ As for the Reverse Rust Kernel with a Forth OS, the Forth Web Interpreter provid
 
 The Forth Web Interpreter's adaptability, extensibility, and unconventional uses make it a powerful tool for developers, researchers, and enthusiasts to explore new frontiers in software development and systems design.
 
-Conclusion
+**Conclusion:**
+
 The Forth Web Interpreter is a feature-rich and flexible software application that enables seamless execution of Forth commands through a web interface. With its intuitive user interface, QR Code integration, and extensibility, it offers a unique and powerful platform for working with Forth programming. Whether you're a Forth enthusiast, a systems programmer, or a developer looking for innovative tools, the Forth Web Interpreter has much to offer. Explore its capabilities, experiment with its features, and unlock new possibilities in your programming journey.
 
-Using the Web Interface
+### **Using the Web Interface:**
+
 Navigate to localhost:8080 in your web browser to use the web interface. There, you will find an input field for entering your Forth commands. Once you've input your commands, click the 'Execute' button to process them. Results will appear in the output area below the input field.
 
-HTTP API
+## **HTTP API:**
+
 In addition to the web interface, the server also exposes an HTTP API which can be used to execute Forth commands. To use this API, send an HTTP POST request to the /forth endpoint with a JSON body containing your commands.
 
 # Example 1 using curl
@@ -156,28 +175,33 @@ curl -X POST -H "Content-Type: application/json" -d '{"commands":"1 2 + ."}' htt
 
 This will execute the Forth command 1 2 + ., which adds the numbers 1 and 2 and outputs the result. The result of the command will be included in the response from the server.
 
-Advanced Usage
+**Advanced Usage:**
+
 This application is designed to be flexible and highly interoperable. It can be integrated with other systems via its HTTP API, and its QR code functionality allows for dynamic loading and execution of JavaScript. Multiple instances of the application can be run simultaneously for increased throughput, and the application's design allows for easy integration into larger systems.
 
 This application can be used as a unique and efficient tool for executing Forth commands via a web interface, whether for education, development, or any other purpose. Its simplicity, flexibility, and efficiency make it a powerful tool for any developer's toolkit.
 
-## QR Code Integration
+## QR Code Integration:
 
 Our application features an exciting QR Code integration. With this, you can generate a QR Code that, when scanned, directs a user to a specific set of Forth commands that are pre-loaded into the web interface. This is done by encoding the Forth commands into a QR Code which encodes a URL for the web interface, with the commands included as a query parameter.
 
-```plaintext
+
 # An example URL might look like this:
+
 http://localhost:8080?commands=1%202%20%2B%20.
 
 # Another example URL might look like this:
+
 http://127.0.0.1:8080?commands=1%202%20%2B%20.
 
 This functionality enables on-the-fly loading and execution of JavaScript, opening up a whole new world of possibilities for executing dynamic, mobile-friendly code with ease.
 
-Security
+Security:
+
 The JavaScript layer serves as a first-level security measure, sanitizing all user inputs before they're passed onto the Rust layer. This helps to prevent code injection and other types of attacks. However, as with all software, it is important to ensure that the server is secure and that appropriate measures are taken to prevent unauthorized access.
 
-Interfacing with Other Systems
+Interfacing with Other Systems:
+
 The server exposes an HTTP API which makes it interoperable with other systems, including embedded systems. Even if the application can't run directly on an embedded system, it can still interface with it through the API.
 
 # Example 1 Python code to interface with an embedded system
@@ -206,8 +230,8 @@ As you can see, by utilizing these features, we can achieve a highly interactive
 
 The application's API is not just limited to a single instance. Multiple instances of the application can be deployed and networked together, enabling a distributed system of Forth servers that communicate and collaborate to solve complex tasks.
 
-```plaintext
 # Example of deploying multiple instances:
+
 Instance 0 -> http://127.0.0.1:8080
 Instance 1 -> http://localhost:8080
 Instance 2 -> http://localhost:8081
@@ -223,7 +247,7 @@ Use Cases and Potential Applications:
 
 Given the application's design and capabilities, there are many potential uses for it. 
 
-Here are a few examples:
+**Here are a few examples:**
 
 Remote Code Execution: The server can be used to execute code remotely. This can be used in a wide variety of applications, from remote server administration to interactive programming competitions.
 
@@ -237,17 +261,16 @@ Embedded Systems: While the server can't run directly on an embedded system, it 
 
 As you can see, our server has the potential to be a versatile tool in a number of different settings. We're excited to see what you'll do with it!
 
-## Security Considerations
+## Security Considerations:
 
 This application utilizes JavaScript execution, which inherently opens up potential security risks if not properly managed. JavaScript payloads received from untrusted sources should be thoroughly inspected and sanitized before execution to prevent any form of malicious behavior such as cross-site scripting (XSS) or remote code execution (RCE). 
 
-```plaintext
 # Simple Example: Sanitizing User Input
 let sanitizedInput = userInput.replace(/<script[^>]*>([\S\s]*?)<\/script>/gmi, '');
 
 It's vital to remember that when dealing with remote code execution, careful steps should be taken to secure your system, such as running the server in a sandboxed or containerized environment.
 
-High-Level Benefits of The Software:
+### **High-Level Benefits of The Software:**
 
 Our software offers several unique benefits:
 
@@ -266,8 +289,8 @@ Efficiency: The application's core is written in Rust, which offers excellent sp
 In conclusion, this software can serve as a robust tool for developers and organizations alike, enabling a wide range of functionalities with its unique features.
 
 ## Unconventional Usages and The Reverse Rust Kernel with Its Forth OS
-
-The software we've developed has potential beyond the conventional uses discussed earlier. It can serve as a starting point for developing a reverse Rust kernel with a Forth OS. Here are some interesting, less conventional use cases:
+**
+The software we've developed has potential beyond the conventional uses discussed earlier. It can serve as a starting point for developing a reverse Rust kernel with a Forth OS. Here are some interesting, less conventional use cases:**
 
 1. **A Learning Tool**: By studying how JavaScript is parsed and executed within a Rust environment, and how the Rust kernel interacts with the Forth OS, students and developers can gain a deeper understanding of low-level systems programming, operating systems, and programming languages.
 
