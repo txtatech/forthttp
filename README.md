@@ -33,6 +33,16 @@ https://docs.google.com/document/d/1RFs70Qx1wmyuDe7HtkR18cOVL9SwWhtJ_HFDrESAVD4/
 
 **The 'forthttp' Forth Web Interpreter is a versatile software application that combines Rust-based web server functionality with Forth language integration. It allows users to interact with a web interface to input and execute Forth commands, providing a seamless and efficient way to work with Forth programming.**
 
+Related Projects:
+
+https://github.com/txtatech/ascii-qr-code-loader
+
+https://github.com/txtatech/rusthttp
+
+https://github.com/txtatech/static
+
+https://github.com/txtatech/console-to-page
+
 **System Architecture:**
 
 The Forth Web Interpreter consists of the following key components:
