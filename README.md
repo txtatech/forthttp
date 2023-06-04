@@ -31,7 +31,7 @@ https://docs.google.com/document/d/1RFs70Qx1wmyuDe7HtkR18cOVL9SwWhtJ_HFDrESAVD4/
 
 ### **About:**
 
-**The 'forthttp' Forth Web Interpreter is a versatile software application that combines Rust-based web server functionality with Forth language integration. It allows users to interact with a web interface to input and execute Forth commands, providing a seamless and efficient way to work with Forth programming.**
+**The 'forthttp' Forth Web Interpreter is a versatile software application that combines Rust-based web server functionality with Forth language integration. It allows users to interact with a web interface to input and execute Forth commands, providing a seamless and efficient way to work with Forth programming. There is also QR-Code integration in the form of both ASCII and image file based QR-Code decoding which entails extracting Base64 encoded JavaScript from the Qr-Codes, executing it and makes it accesible to the browser via the DOM, as a Blob, in memory and as a Binary String.**
 
 Related Projects:
 
