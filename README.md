@@ -31,7 +31,7 @@ https://docs.google.com/document/d/1RFs70Qx1wmyuDe7HtkR18cOVL9SwWhtJ_HFDrESAVD4/
 
 ### **About:**
 
-**The 'forthttp' Forth Web Interpreter is a powerful and versatile software application that combines Rust-based web server functionality with Forth language integration. It allows users to interact with a web interface to input and execute Forth commands, providing a seamless and efficient way to work with Forth programming.**
+**The 'forthttp' Forth Web Interpreter is a versatile software application that combines Rust-based web server functionality with Forth language integration. It allows users to interact with a web interface to input and execute Forth commands, providing a seamless and efficient way to work with Forth programming.**
 
 **System Architecture:**
 
@@ -39,7 +39,7 @@ The Forth Web Interpreter consists of the following key components:
 
 **Browser:**
 
-Users interact with the application through a web browser, where they can input Forth commands and receive the results of their execution.
+Interact with the application through a web browser, input Forth commands and receive the results of the execution.
 
 **Rust Web Server:**
 
@@ -53,42 +53,52 @@ The architecture ensures a smooth flow of communication between the browser, web
 
 **Functionality and Usage**
 
-The Forth Web Interpreter offers a range of features and capabilities for executing Forth commands. Users can access the web application through their browser and interact with the intuitive web interface. Here's a step-by-step guide on how to use the application:
+The Forth Web Interpreter offers a range of features and capabilities for executing Forth commands. You can access the web application through the browser and interact with the web interface. 
 
-Access the Web Interface: Open your preferred web browser and navigate to the URL where the Forth Web Interpreter is hosted. For example, you may access it at http://localhost:8080 or http://127.0.0.1:8080
+**Here's a step-by-step guide on how to use the application:**
 
-Input Forth Commands: In the provided input field on the web interface, enter your Forth commands. The interface offers a user-friendly environment for typing and managing your code.
+**Accessing the Web Interface:** 
 
-Execute the Commands: Once you've entered your Forth commands, click the "Execute" button on the web interface. The application will process the commands and send them to the Rust web server for execution.
+Open your preferred web browser and navigate to the URL where the Forth Web Interpreter is hosted.
 
-View Results: The application will display the results of the executed Forth commands on the web interface. You can review the output and continue interacting with the system by entering more commands as desired.
+For example, you may access it at http://localhost:8080 or http://127.0.0.1:8080
+
+**Input Forth Commands:**
+
+In the provided input field on the web interface, enter your Forth commands. The interface offers a user-friendly environment for typing and managing your code.
+
+**Execute the Commands:**
+
+Once you've entered your Forth commands, click the "Execute" button on the web interface. The application will process the commands and send them to the Rust web server for execution.
+
+**View Results:** 
+
+The application will display the results of the executed Forth commands on the web interface. You can review the output and continue interacting with the system by entering more commands as desired.
 
 In addition to the web interface, the Forth Web Interpreter also provides an HTTP API, allowing developers to programmatically interact with the application. By sending HTTP POST requests to the appropriate endpoint (/forth), developers can execute Forth commands and retrieve the results programmatically.
 
-Installation and Setup:
+**Installation and Setup:**
 
-To set up the Forth Web Interpreter, follow these steps:
+## **To set up the Forth Web Interpreter, follow these steps:**
 
-Clone the Repository: Begin by cloning the repository containing the Forth Web Interpreter codebase to your local machine using the following command:
+**Clone the Repository:**
 
-bash
-Copy code
+Begin by cloning the repository containing the Forth Web Interpreter codebase to your local machine using the following command:
+
 git clone https://github.com/txtatech/forthttp.git
-Navigate to the Project Directory: Move into the project directory by running the command:
 
-bash
-Copy code
+**Navigate to the Project Directory.** Move into the project directory by running the command:
+
 cd forth-web-interpreter
-Build the Project: Use Cargo, the Rust package manager, to build the project by executing the following command:
 
-arduino
-Copy code
+**Build the Project:** Use Cargo, the Rust package manager, to build the project by executing the following command:
+
 cargo build --release
-Start the Server: Once the build process completes successfully, start the server by running the executable:
 
-arduino
-Copy code
+**Start the Server:** Once the build process completes successfully, start the server by running the executable:
+
 ./target/release/forth-web-interpreter
+
 This will start the web server, which will listen on localhost:8080 by default.
 
 Now you have the Forth Web Interpreter up and running, ready to accept Forth commands through the web interface or the HTTP API.
@@ -96,7 +106,7 @@ Now you have the Forth Web Interpreter up and running, ready to accept Forth com
 **QR Code Integration:
 **
 
-One of the notable features of the Forth Web Interpreter is its QR Code integration. The application allows you to generate QR Codes that, when scanned, direct users to a specific set of pre-loaded Forth commands. This functionality enables dynamic loading and execution of JavaScript, providing a unique and interactive user experience.
+One of the notable features of the Forth Web Interpreter is its QR Code integration. The application allows you to generate QR Codes that, when scanned, could direct users to a specific set of pre-loaded Forth commands. This functionality also enables dynamic loading and execution of JavaScript, providing a unique and interactive user experience.
 
 **To utilize the QR Code integration:
 **
@@ -109,9 +119,17 @@ Execute the Pre-loaded Commands: Users can view the pre-loaded Forth commands on
 
 The QR Code integration enhances the versatility and flexibility of the Forth Web Interpreter, allowing users to seamlessly load and execute Forth commands on-the-go.
 
+Indeed, that's a great advantage of using ASCII QR codes. Since they are represented in a binary format, they can be transmitted over the network with optimal efficiency. ASCII QR codes are compact and lightweight, consisting of a series of black and white pixels represented as characters. This allows for fast and efficient data transfer, especially when compared to transmitting larger image files.
+
+By leveraging the binary representation of ASCII QR codes, the Forth Web Interpreter can deliver a seamless and responsive user experience. The compact size of ASCII QR codes makes them ideal for transmitting data in scenarios where bandwidth is limited or network speed is a concern.
+
+Additionally, ASCII QR codes offer built-in error correction capabilities. The QR code specification includes error correction algorithms that allow for the accurate reconstruction of data even in the presence of damaged or partially obscured codes. This enhances the reliability of data transmission and ensures the integrity of the transmitted Forth commands.
+
+Overall, the use of ASCII QR codes in the Forth Web Interpreter provides a fast, efficient, and reliable method for transmitting and executing Forth commands over the network. It enables quick interactions between users and the system, making it an excellent choice for scenarios where real-time communication and responsiveness are crucial.
+
 **Security Considerations:**
 
-When working with a web-based application like the Forth Web Interpreter, it's crucial to prioritize security. Here are a few security considerations to keep in mind:
+When working with a web-based application like the Forth Web Interpreter, it's crucial to prioritize security. Here are a few security considerations to keep in mind.
 
 **User Input Sanitization:**
 
@@ -187,7 +205,6 @@ This application can be used as a unique and efficient tool for executing Forth 
 
 Our application features an exciting QR Code integration. With this, you can generate a QR Code that, when scanned, directs a user to a specific set of Forth commands that are pre-loaded into the web interface. This is done by encoding the Forth commands into a QR Code which encodes a URL for the web interface, with the commands included as a query parameter.
 
-
 # An example URL might look like this:
 
 http://localhost:8080?commands=1%202%20%2B%20.
@@ -198,11 +215,11 @@ http://127.0.0.1:8080?commands=1%202%20%2B%20.
 
 This functionality enables on-the-fly loading and execution of JavaScript, opening up a whole new world of possibilities for executing dynamic, mobile-friendly code with ease.
 
-Security:
+**Security:**
 
 The JavaScript layer serves as a first-level security measure, sanitizing all user inputs before they're passed onto the Rust layer. This helps to prevent code injection and other types of attacks. However, as with all software, it is important to ensure that the server is secure and that appropriate measures are taken to prevent unauthorized access.
 
-Interfacing with Other Systems:
+**Interfacing with Other Systems:**
 
 The server exposes an HTTP API which makes it interoperable with other systems, including embedded systems. Even if the application can't run directly on an embedded system, it can still interface with it through the API.
 
@@ -241,11 +258,11 @@ Instance 3 -> http://localhost:8082
 
 Each instance can serve a different set of tasks or they could share the load of processing a large number of commands.
 
-Extending and Modifying the Application:
+**Extending and Modifying the Application:**
 
-Our server is written in Rust, a modern, efficient, and highly flexible language. This makes it easy to modify and extend the application with new features or to tailor it to specific use cases. If you're familiar with Rust, you can dive right into the codebase and start making modifications.
+The written in Rust, which makes it easy to modify and extend the application with new features or to tailor it to specific use cases. If you're familiar with Rust, you can dive right into the codebase and start making modifications.
 
-Use Cases and Potential Applications:
+**Use Cases and Potential Applications:**
 
 Given the application's design and capabilities, there are many potential uses for it. 
 
@@ -261,8 +278,6 @@ Distributed Computing: As mentioned earlier, the server can be networked with ot
 
 Embedded Systems: While the server can't run directly on an embedded system, it can interface with them through the API. This could be used to control and manage embedded systems remotely.
 
-As you can see, our server has the potential to be a versatile tool in a number of different settings. We're excited to see what you'll do with it!
-
 ## Security Considerations:
 
 This application utilizes JavaScript execution, which inherently opens up potential security risks if not properly managed. JavaScript payloads received from untrusted sources should be thoroughly inspected and sanitized before execution to prevent any form of malicious behavior such as cross-site scripting (XSS) or remote code execution (RCE). 
@@ -273,8 +288,6 @@ let sanitizedInput = userInput.replace(/<script[^>]*>([\S\s]*?)<\/script>/gmi, '
 It's vital to remember that when dealing with remote code execution, careful steps should be taken to secure your system, such as running the server in a sandboxed or containerized environment.
 
 ### **High-Level Benefits of The Software:**
-
-Our software offers several unique benefits:
 
 Versatility: The application can be used in a variety of contexts due to its JavaScript integration and networkable architecture.
 
@@ -288,10 +301,8 @@ Accessibility: The application can be accessed and controlled remotely due to it
 
 Efficiency: The application's core is written in Rust, which offers excellent speed and memory safety.
 
-In conclusion, this software can serve as a robust tool for developers and organizations alike, enabling a wide range of functionalities with its unique features.
+## Unconventional Usages and The Reverse Rust Kernel with Its Forth OS**
 
-## Unconventional Usages and The Reverse Rust Kernel with Its Forth OS
-**
 The software we've developed has potential beyond the conventional uses discussed earlier. It can serve as a starting point for developing a reverse Rust kernel with a Forth OS. Here are some interesting, less conventional use cases:**
 
 1. **A Learning Tool**: By studying how JavaScript is parsed and executed within a Rust environment, and how the Rust kernel interacts with the Forth OS, students and developers can gain a deeper understanding of low-level systems programming, operating systems, and programming languages.
@@ -304,24 +315,16 @@ The software we've developed has potential beyond the conventional uses discusse
 
 5. **Game Development**: Given the interactivity of the QR code system and the ability to remotely execute JavaScript, one could use the software as a basis for developing unique, networked games.
 
-Now, about the Reverse Rust Kernel with a Forth OS: 
+**About the Reverse Rust Kernel with a Forth OS:**
 
-The project as it stands can serve as a launchpad for developing a Rust kernel that interfaces with a Forth-based OS. This would involve extending the current functionality of the Rust layer to handle more system-level operations, such as memory management and hardware interfacing. The Forth OS, meanwhile, could be built on top of this Rust kernel, providing a low-level, highly efficient platform for executing Forth code.
+The project as it stands can serve as a launchpad for developing a 'reverse' Rust kernel that interfaces with a Forth-based OS. This would involve extending the current functionality of the Rust layer to handle more system-level operations, such as memory management and hardware interfacing. The Forth OS, meanwhile, could be built on top of this reverse Rust kernel, providing a low-level, highly efficient platform for executing Forth code.
 
 This opens up several opportunities:
 
-1. **Building a Minimalist OS**: Forth is renowned for its simplicity and efficiency. A Forth OS built on a Rust kernel could be a very lightweight and efficient system, suitable for resource-constrained environments.
+1. **Building a Minimalist OS**: Forth is renowned for its simplicity and efficiency. A Forth OS built on a reverse Rust kernel could be a very lightweight and efficient system, suitable for resource-constrained environments.
 
 2. **Exploring New Programming Paradigms**: Forth's stack-based, postfix syntax offers a different programming paradigm that might inspire new approaches to problem-solving.
 
 3. **Investigating Security**: Given Rust's focus on safety and Forth's low-level nature, such a system could potentially offer new insights into secure operating system design.
 
 Overall, the software offers a multitude of unconventional possibilities, making it a highly adaptable tool for various creative and innovative use cases.
-
-Indeed, that's a great advantage of using ASCII QR codes. Since they are represented in a binary format, they can be transmitted over the network with optimal efficiency. ASCII QR codes are compact and lightweight, consisting of a series of black and white pixels represented as characters. This allows for fast and efficient data transfer, especially when compared to transmitting larger image files.
-
-By leveraging the binary representation of ASCII QR codes, the Forth Web Interpreter can deliver a seamless and responsive user experience. The compact size of ASCII QR codes makes them ideal for transmitting data in scenarios where bandwidth is limited or network speed is a concern.
-
-Additionally, ASCII QR codes offer built-in error correction capabilities. The QR code specification includes error correction algorithms that allow for the accurate reconstruction of data even in the presence of damaged or partially obscured codes. This enhances the reliability of data transmission and ensures the integrity of the transmitted Forth commands.
-
-Overall, the use of ASCII QR codes in the Forth Web Interpreter provides a fast, efficient, and reliable method for transmitting and executing Forth commands over the network. It enables quick interactions between users and the system, making it an excellent choice for scenarios where real-time communication and responsiveness are crucial.
