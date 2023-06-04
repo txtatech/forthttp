@@ -61,6 +61,20 @@ The Forth runtime serves as the core engine that executes the Forth commands. It
 
 The architecture ensures a smooth flow of communication between the browser, web server, and Forth runtime, enabling users to execute Forth commands and receive immediate feedback through the web interface.
 
+**QR Code Integration:**
+
+## **Note:** **All JavaScript code loaded from QR codes is stored in the DOM, in a Blob, in Memory and as a Binary String.**
+
+There are several components of Forthttp that handle QR codes in a variety of ways. 
+
+On the main landing page there is a built-in ASCII QR code reader that loads the ASCII QR codes, scans their contents and executes any JavaScript code found in the ASCII QR codes if it is present.
+
+On the images.html page (found in the 'static' folder) there is a QR code generation procedure executed that makes a code appear at the very top of the page with the phrase 'Hi!'. This can be modified for a variety of uses and acts as a placeholder for future features.
+
+Also in the images.html file there is a QR Code Archive of .png files with a QR Code reader that handles that file extention. It may handle other extensions but I am unsure on that. This QR code reader requires the 'Cache QR Codes' link to be clicked to be initiated. I highly reccomend opening Developer Tools Console if you click the 'Cache QR Codes' link so that you can see the JavaScript (encoded as Base64) being scanned, 'cached' and made executable/acessible to the page and browser.
+
+The code that gets loaded via the 'Cache QR Codes' link does a numner of things to setup a working enviroment for the site so that it can utilize service workers as well as other backend functions.
+
 **Functionality and Usage**
 
 The Forth Web Interpreter offers a range of features and capabilities for executing Forth commands. You can access the web application through the browser and interact with the web interface. 
@@ -113,7 +127,7 @@ This will start the web server, which will listen on localhost:8080 by default.
 
 Now you have the Forth Web Interpreter up and running, ready to accept Forth commands through the web interface or the HTTP API.
 
-**QR Code Integration:
+**More On QR Code Integration:
 **
 
 One of the notable features of the Forth Web Interpreter is its QR Code integration. The application allows you to generate QR Codes that, when scanned, could direct users to a specific set of pre-loaded Forth commands. This functionality also enables dynamic loading and execution of JavaScript, providing a unique and interactive user experience.
@@ -127,9 +141,7 @@ Scan the QR Code: Users can use their mobile devices or QR Code scanners to scan
 
 Execute the Pre-loaded Commands: Users can view the pre-loaded Forth commands on the web interface and execute them by clicking the "Execute" button. The results will be displayed in real-time, offering an interactive and engaging user experience.
 
-The QR Code integration enhances the versatility and flexibility of the Forth Web Interpreter, allowing users to seamlessly load and execute Forth commands on-the-go.
-
-Indeed, that's a great advantage of using ASCII QR codes. Since they are represented in a binary format, they can be transmitted over the network with optimal efficiency. ASCII QR codes are compact and lightweight, consisting of a series of black and white pixels represented as characters. This allows for fast and efficient data transfer, especially when compared to transmitting larger image files.
+The QR Code integration enhances the versatility and flexibility of the Forth Web Interpreter, allowing users to seamlessly load and execute Forth commands on-the-go which is a great advantage of using ASCII QR codes. Since they are represented in a binary format, they can be transmitted over the network with optimal efficiency. ASCII QR codes are compact and lightweight, consisting of a series of black and white pixels represented as characters. This allows for fast and efficient data transfer, especially when compared to transmitting larger image files.
 
 By leveraging the binary representation of ASCII QR codes, the Forth Web Interpreter can deliver a seamless and responsive user experience. The compact size of ASCII QR codes makes them ideal for transmitting data in scenarios where bandwidth is limited or network speed is a concern.
 
