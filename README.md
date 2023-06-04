@@ -45,7 +45,7 @@ https://github.com/txtatech/console-to-page
 
 **System Architecture:**
 
-The Forth Web Interpreter consists of the following key components:
+Forthttp consists of the following key components:
 
 **Browser:**
 
@@ -77,13 +77,13 @@ The code that gets loaded via the 'Cache QR Codes' link does a numner of things 
 
 **Functionality and Usage**
 
-The Forth Web Interpreter offers a range of features and capabilities for executing Forth commands. You can access the web application through the browser and interact with the web interface. 
+The Forthttp offers a range of features and capabilities for executing Forth commands. You can access the web application through the browser and interact with the web interface. 
 
 **Here's a step-by-step guide on how to use the application:**
 
 **Accessing the Web Interface:** 
 
-Open your preferred web browser and navigate to the URL where the Forth Web Interpreter is hosted.
+Open your preferred web browser and navigate to the URL where the Forthttp is hosted.
 
 For example, you may access it at http://localhost:8080 or http://127.0.0.1:8080
 
@@ -99,15 +99,15 @@ Once you've entered your Forth commands, click the "Execute" button on the web i
 
 The application will display the results of the executed Forth commands on the web interface. You can review the output and continue interacting with the system by entering more commands as desired.
 
-In addition to the web interface, the Forth Web Interpreter also provides an HTTP API, allowing developers to programmatically interact with the application. By sending HTTP POST requests to the appropriate endpoint (/forth), developers can execute Forth commands and retrieve the results programmatically.
+In addition to the web interface, the Forthttp also provides an HTTP API, allowing developers to programmatically interact with the application. By sending HTTP POST requests to the appropriate endpoint (/forth), developers can execute Forth commands and retrieve the results programmatically.
 
 **Installation and Setup:**
 
-## **To set up the Forth Web Interpreter, follow these steps:**
+## **To set up the Forthttp, follow these steps:**
 
 **Clone the Repository:**
 
-Begin by cloning the repository containing the Forth Web Interpreter codebase to your local machine using the following command:
+Begin by cloning the repository containing the Forthttp codebase to your local machine using the following command:
 
 git clone https://github.com/txtatech/forthttp.git
 
@@ -125,12 +125,12 @@ cargo build --release
 
 This will start the web server, which will listen on localhost:8080 by default.
 
-Now you have the Forth Web Interpreter up and running, ready to accept Forth commands through the web interface or the HTTP API.
+Now you have the Forthttp up and running, ready to accept Forth commands through the web interface or the HTTP API.
 
 **More On QR Code Integration:
 **
 
-One of the notable features of the Forth Web Interpreter is its QR Code integration. The application allows you to generate QR Codes that, when scanned, could direct users to a specific set of pre-loaded Forth commands. This functionality also enables dynamic loading and execution of JavaScript, providing a unique and interactive user experience.
+One of the notable features of the Forthttp is its QR Code integration. The application allows you to generate QR Codes that, when scanned, could direct users to a specific set of pre-loaded Forth commands. This functionality also enables dynamic loading and execution of JavaScript, providing a unique and interactive user experience.
 
 **To utilize the QR Code integration:
 **
@@ -141,17 +141,17 @@ Scan the QR Code: Users can use their mobile devices or QR Code scanners to scan
 
 Execute the Pre-loaded Commands: Users can view the pre-loaded Forth commands on the web interface and execute them by clicking the "Execute" button. The results will be displayed in real-time, offering an interactive and engaging user experience.
 
-The QR Code integration enhances the versatility and flexibility of the Forth Web Interpreter, allowing users to seamlessly load and execute Forth commands on-the-go which is a great advantage of using ASCII QR codes. Since they are represented in a binary format, they can be transmitted over the network with optimal efficiency. ASCII QR codes are compact and lightweight, consisting of a series of black and white pixels represented as characters. This allows for fast and efficient data transfer, especially when compared to transmitting larger image files.
+The QR Code integration enhances the versatility and flexibility of Forthttp, allowing users to seamlessly load and execute Forth commands on-the-go which is a great advantage of using ASCII QR codes. Since they are represented in a binary format, they can be transmitted over the network with optimal efficiency. ASCII QR codes are compact and lightweight, consisting of a series of black and white pixels represented as characters. This allows for fast and efficient data transfer, especially when compared to transmitting larger image files.
 
-By leveraging the binary representation of ASCII QR codes, the Forth Web Interpreter can deliver a seamless and responsive user experience. The compact size of ASCII QR codes makes them ideal for transmitting data in scenarios where bandwidth is limited or network speed is a concern.
+By leveraging the binary representation of ASCII QR codes, Forthttp can deliver a seamless and responsive user experience. The compact size of ASCII QR codes makes them ideal for transmitting data in scenarios where bandwidth is limited or network speed is a concern.
 
 Additionally, ASCII QR codes offer built-in error correction capabilities. The QR code specification includes error correction algorithms that allow for the accurate reconstruction of data even in the presence of damaged or partially obscured codes. This enhances the reliability of data transmission and ensures the integrity of the transmitted Forth commands.
 
-Overall, the use of ASCII QR codes in the Forth Web Interpreter provides a fast, efficient, and reliable method for transmitting and executing Forth commands over the network. It enables quick interactions between users and the system, making it an excellent choice for scenarios where real-time communication and responsiveness are crucial.
+Overall, the use of ASCII QR codes in Forthttp provides a fast, efficient, and reliable method for transmitting and executing Forth commands over the network. It enables quick interactions between users and the system, making it an excellent choice for scenarios where real-time communication and responsiveness are crucial.
 
 **Security Considerations:**
 
-When working with a web-based application like the Forth Web Interpreter, it's crucial to prioritize security. Here are a few security considerations to keep in mind.
+When working with a web-based application like the Forthttp, it's crucial to prioritize security. Here are a few security considerations to keep in mind.
 
 **User Input Sanitization:**
 
@@ -163,43 +163,43 @@ Access Control: Implement proper access control mechanisms to restrict unauthori
 
 Code Review and Auditing: Regularly review the codebase for potential security vulnerabilities. Perform thorough security audits to identify and address any weaknesses in the application's design and implementation.
 
-By adopting a proactive approach to security and following best practices, you can mitigate potential risks and ensure a secure and reliable environment for the Forth Web Interpreter.
+By adopting a proactive approach to security and following best practices, you can mitigate potential risks and ensure a secure and reliable environment for the Forthttp.
 
 **Extensibility and Customization:**
 
-The Forth Web Interpreter is built with flexibility and extensibility in mind, allowing you to tailor it to your specific needs. The Rust-based server provides a solid foundation for further development and customization. Here are some possibilities for extending and modifying the application:
+Forthttp is built with flexibility and extensibility in mind, allowing you to tailor it to your specific needs. The Rust-based server provides a solid foundation for further development and customization. Here are some possibilities for extending and modifying the application:
 
 Additional Functionality: You can expand the capabilities of the Forth runtime by incorporating new Forth words or implementing additional operations specific to your use case.
 
 User Interface Enhancements: Customize the web interface to improve user experience, add visual elements, or incorporate other JavaScript libraries or frameworks.
 
-Integration with External Systems: Utilize the HTTP API to integrate the Forth Web Interpreter with other systems or services, allowing seamless interoperability and expanding the scope of your application.
+Integration with External Systems: Utilize the HTTP API to integrate Forthttp with other systems or services, allowing seamless interoperability and expanding the scope of your application.
 
 Optimizations and Performance Enhancements: Analyze the performance of the application and make optimizations where necessary. This may involve optimizing the Forth runtime, improving the Rust server code, or implementing caching mechanisms.
 
-The extensibility and customization options enable you to adapt the Forth Web Interpreter to suit your unique requirements and explore new possibilities in Forth programming.
+The extensibility and customization options enable you to adapt the Forthttp to suit your unique requirements and explore new possibilities in Forth programming.
 
 ## **Unconventional Uses and the Reverse Rust Kernel with Forth OS:**
 
-The Forth Web Interpreter can serve as a foundation for exploring unconventional use cases and innovative solutions. Here are a few examples:
+Forthttp can serve as a foundation for exploring unconventional use cases and innovative solutions. Here are a few examples:
 
 A Learning Tool: The integration of JavaScript, Rust, and Forth provides an excellent platform for studying low-level systems programming, operating system development, and programming language design. By analyzing the codebase and understanding the interactions between these components, developers and students can gain valuable insights into these areas of study.
 
-Prototyping Hardware and Embedded Systems: With Rust's compatibility with embedded systems, the Forth Web Interpreter can be a valuable tool for prototyping and testing custom hardware or novel embedded system designs. The ability to execute JavaScript and interface with the hardware opens up possibilities for rapid development and evaluation.
+Prototyping Hardware and Embedded Systems: With Rust's compatibility with embedded systems, Forthttp can be a valuable toolset for prototyping and testing custom hardware or novel embedded system designs. The ability to execute JavaScript and interface with the hardware opens up possibilities for rapid development and evaluation.
 
-Networking and Text-based Interactions: The Forth Web Interpreter's RESTful API and text-based nature make it suitable for networking applications. It can be used as a minimalist communication platform, allowing devices to share information, exchange commands, or create a simple text-based social network.
+Networking and Text-based Interactions: Forthttp's RESTful API and text-based nature make it suitable for networking applications. It can be used as a minimalist communication platform, allowing devices to share information, exchange commands, or create a simple text-based social network.
 
-Scripting and Automation: Leveraging the Forth Web Interpreter's API, developers can build custom automated workflows or task scripts. JavaScript code can be sent to the server to automate specific actions or integrate with other systems.
+Scripting and Automation: Leveraging Forthttp's API, developers can build custom automated workflows or task scripts. JavaScript code can be sent to the server to automate specific actions or integrate with other systems.
 
-Game Development: By utilizing the QR code functionality and the ability to execute JavaScript, the Forth Web Interpreter can serve as a foundation for developing unique networked games or interactive experiences.
+Game Development: By utilizing the QR code functionality and the ability to execute JavaScript, Forthttp can serve as a foundation for developing unique networked games or interactive experiences.
 
-As for the Reverse Rust Kernel with a Forth OS, the Forth Web Interpreter provides a starting point for building a Rust-based kernel that interfaces with a Forth-based operating system. This approach can yield a lightweight and efficient system, suitable for resource-constrained environments. It opens up opportunities for exploring new programming paradigms, investigating security aspects, and building minimalist operating systems.
+As for the Reverse Rust Kernel with a Forth OS, Forthttp provides a starting point for building a Rust-based kernel that interfaces with a Forth-based operating system. This approach can yield a lightweight and efficient system, suitable for resource-constrained environments. It opens up opportunities for exploring new programming paradigms, investigating security aspects, and building minimalist operating systems.
 
-The Forth Web Interpreter's adaptability, extensibility, and unconventional uses make it a powerful tool for developers, researchers, and enthusiasts to explore new frontiers in software development and systems design.
+Forth's adaptability, extensibility, and unconventional uses make it a powerful tool for developers, researchers, and enthusiasts to explore new frontiers in software development and systems design.
 
 **Conclusion:**
 
-The Forth Web Interpreter is a feature-rich and flexible software application that enables seamless execution of Forth commands through a web interface. With its intuitive user interface, QR Code integration, and extensibility, it offers a unique and powerful platform for working with Forth programming. Whether you're a Forth enthusiast, a systems programmer, or a developer looking for innovative tools, the Forth Web Interpreter has much to offer. Explore its capabilities, experiment with its features, and unlock new possibilities in your programming journey.
+Forthttp is a feature-rich and flexible software application that enables seamless execution of Forth commands through a web interface. With its intuitive user interface, QR Code integration, and extensibility, it offers a unique and powerful platform for working with Forth programming. Whether you're a Forth enthusiast, a systems programmer, or a developer looking for innovative tools, Forthttp had much to offer. Explore its capabilities, experiment with its features, and unlock new possibilities in your programming journey.
 
 ### **Using the Web Interface:**
 
