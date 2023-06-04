@@ -1,5 +1,5 @@
 # forthttp
-**Forthttp is not a Forth Web Interpreter!** 
+**Forthttp is not a Forth Web Interpreter!** Forthttp is a self-constructing, Rust based server with a two-layer Forth interpreter, a QR-Code mechanism to execute JavaScript code found in QR-Codes and use them to setup a user interface for working with the server as well as its other features.   
 
 VIDEO QUICKSTART GUIDE:
 
