@@ -323,9 +323,9 @@ Accessibility: The application can be accessed and controlled remotely due to it
 
 Efficiency: The application's core is written in Rust, which offers excellent speed and memory safety.
 
-## Unconventional Usages and The Reverse Rust Kernel with Its Forth OS**
+## Unconventional Usages and The Reverse Rust Kernel with Its Forth OS
 
-The software we've developed has potential beyond the conventional uses discussed earlier. It can serve as a starting point for developing a reverse Rust kernel with a Forth OS. Here are some interesting, less conventional use cases:**
+The software we've developed has potential beyond the conventional uses discussed earlier. It can serve as a starting point for developing a reverse Rust kernel with a Forth OS. Here are some interesting, less conventional use cases:
 
 1. **A Learning Tool**: By studying how JavaScript is parsed and executed within a Rust environment, and how the Rust kernel interacts with the Forth OS, students and developers can gain a deeper understanding of low-level systems programming, operating systems, and programming languages.
 
