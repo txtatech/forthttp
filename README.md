@@ -71,9 +71,9 @@ On the main landing page there is a built-in ASCII QR code reader that loads the
 
 On the images.html page (found in the 'static' folder) there is a QR code generation procedure executed that makes a code appear at the very top of the page with the phrase 'Hi!'. This can be modified for a variety of uses and acts as a placeholder for future features.
 
-Also in the images.html file there is a QR Code Archive of .png files with a QR Code reader that handles that file extention. It may handle other extensions but I am unsure on that. This QR code reader requires the 'Cache QR Codes' link to be clicked to be initiated. I highly reccomend opening Developer Tools Console if you click the 'Cache QR Codes' link so that you can see the JavaScript (encoded as Base64) being scanned, 'cached' and made executable/acessible to the page and browser.
+Also in the images.html file there is a QR Code Archive of .png files with a QR Code reader that handles that file extension. It may handle other extensions but I am unsure on that. This QR code reader requires the 'Cache QR Codes' link to be clicked to be initiated. I highly recommend opening Developer Tools Console if you click the 'Cache QR Codes' link so that you can see the JavaScript (encoded as Base64) being scanned, 'cached' and made executable/accessible to the page and browser.
 
-The code that gets loaded via the 'Cache QR Codes' link does a numner of things to setup a working enviroment for the site so that it can utilize service workers as well as other backend functions.
+The code that gets loaded via the 'Cache QR Codes' link does a number of things to setup a working environment for the site so that it can utilize service workers as well as other backend functions.
 
 **Functionality and Usage**
 
@@ -199,7 +199,7 @@ Forth's adaptability, extensibility, and unconventional uses make it a powerful 
 
 **Conclusion:**
 
-Forthttp is a feature-rich and flexible software application that enables seamless execution of Forth commands through a web interface. With its intuitive user interface, QR Code integration, and extensibility, it offers a unique and powerful platform for working with Forth programming. Whether you're a Forth enthusiast, a systems programmer, or a developer looking for innovative tools, Forthttp had much to offer. Explore its capabilities, experiment with its features, and unlock new possibilities in your programming journey.
+Forthttp is a feature-rich and flexible software application that enables seamless execution of Forth commands through a web interface. With its intuitive user interface, QR Code integration, and extensibility, it offers a unique and powerful platform for working with Forth programming. Whether you're a Forth enthusiast, a systems programmer, or a developer looking for innovative tools, Forthttp has much to offer. Explore its capabilities, experiment with its features, and unlock new possibilities in your programming journey.
 
 ### **Using the Web Interface:**
 
@@ -282,7 +282,7 @@ Each instance can serve a different set of tasks or they could share the load of
 
 **Extending and Modifying the Application:**
 
-The written in Rust, which makes it easy to modify and extend the application with new features or to tailor it to specific use cases. If you're familiar with Rust, you can dive right into the codebase and start making modifications.
+It is written in Rust, which makes it easy to modify and extend the application with new features or to tailor it to specific use cases. If you're familiar with Rust, you can dive right into the codebase and start making modifications.
 
 **Use Cases and Potential Applications:**
 
@@ -350,3 +350,5 @@ This opens up several opportunities:
 3. **Investigating Security**: Given Rust's focus on safety and Forth's low-level nature, such a system could potentially offer new insights into secure operating system design.
 
 Overall, the software offers a multitude of unconventional possibilities, making it a highly adaptable tool for various creative and innovative use cases.
+
+
