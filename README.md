@@ -323,9 +323,9 @@ Accessibility: The application can be accessed and controlled remotely due to it
 
 Efficiency: The application's core is written in Rust, which offers excellent speed and memory safety.
 
-## Unconventional Usages and The Reverse Rust Kernel with Its Forth OS
+## Unconventional Usages and The 'Reverse Rust Kernel' with Its Forth-based Operating System.
 
-The software we've developed has potential beyond the conventional uses discussed earlier. It can serve as a starting point for developing a reverse Rust kernel with a Forth OS. Here are some interesting, less conventional use cases:
+The software we've developed has potential beyond the conventional uses discussed earlier. It can serve as a starting point for developing a reverse Rust kernel with a Forth-based OS. Here are some interesting, less conventional use cases:
 
 1. **A Learning Tool**: By studying how JavaScript is parsed and executed within a Rust environment, and how the Rust kernel interacts with the Forth OS, students and developers can gain a deeper understanding of low-level systems programming, operating systems, and programming languages.
 
@@ -337,9 +337,9 @@ The software we've developed has potential beyond the conventional uses discusse
 
 5. **Game Development**: Given the interactivity of the QR code system and the ability to remotely execute JavaScript, one could use the software as a basis for developing unique, networked games.
 
-**About the Reverse Rust Kernel with a Forth OS:**
+**About the Reverse Rust Kernel with a Forth-based OS:**
 
-The project as it stands can serve as a launchpad for developing a 'reverse' Rust kernel that interfaces with a Forth-based OS. This would involve extending the current functionality of the Rust layer to handle more system-level operations, such as memory management and hardware interfacing. The Forth OS, meanwhile, could be built on top of this reverse Rust kernel, providing a low-level, highly efficient platform for executing Forth code.
+The project as it stands can serve as a launchpad for developing a 'reverse' Rust kernel that interfaces with a Forth-based OS. This would involve extending the current functionality of the Rust layer to handle more system-level operations, such as memory management and hardware interfacing. The Forth-based OS, meanwhile, could be built on top of this reverse Rust kernel, providing a low-level, highly efficient platform for executing Forth code.
 
 This opens up several opportunities:
 
